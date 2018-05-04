@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link rel="stylesheet" type="text/css" href="main.css">
+<title>Cyder.rental</title>
+<style type="text/css">
+img.a{
+	vertical-align:baseline;}
+}
+.auto-style3 {
+	text-align: center;
+}
+.auto-style4 {
+	text-align: left;
+}
+.auto-style5 {
+	text-align: right;
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="auto-style4" style="width: 339px">
+
+<img alt="logo" height="240" src="cydr.png" width="310" />
+
+</div>
+
+<table style="width: 100%">
+	<tr><td style="width: 121px"><a href="location.html">Our Locations</a></td>
+		<td style="width: 76px">&nbsp;&nbsp;<a href="Ourprices.html"> vehicles & its price</a></td>
+		<td class="auto-style5"><a href="location.html"><strong>Book A Vehicle</strong></a></td>
+	</tr>
+</table>
+<h2> Just a  Six  small  step  steps  you can book  a  vehicle  of  your  choice for 24hours. Just   click  on  book  a  vehicle .  NOW!!!</h2>
+<p>Everything we do is about giving you the freedom to discover more. We’ll move mountains to find you the right rental car, and bring you a smooth, hassle-free experience from start to finish. Here you can find out more about how we work.
+</p><h3> OUR VEHICLE ARE LISTED BELOW</h3>
+<hr>
+<table style="width: 100%" align="center">
+	<tr>
+		<td class="auto-style3" style="width: 974px"><strong>&nbsp;Cars</strong></td>
+	</tr>
+</table>
+
+<img class="a" alt="cars" height="200" src="carandev.png" width="800"  />
+
+<table style="width: 100%">
+	<tr>
+		<td class="auto-style3"><strong>Bikes</strong></td>
+	</tr>
+</table>
+
+&nbsp;<img class="a" alt="bike" height="200" src="bikeandmotorbike.png" width="800" /></p>
+
+
+<table style="width: 100%">
+	<tr>
+		<td class="auto-style3"><strong>RTVs &amp; Golf Carts</strong></td>
+	</tr>
+</table>
+<p>
+<img alt="rtvvvv" height="200" src="rtvandgolfcart.png" width="800" /></p>
+<table style="width: 100%">
+	<tr>
+		<td class="auto-style3"><strong>Yachts</strong></td>
+	</tr>
+</table>
+<p>
+<img alt="yachts" height="200" src="10721220_68SY_SideProfile-new.png" width="800" /> </p>
+<script> 
+
+	function updateTime() {
+     	var currentTime = new Date();
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        var seconds = currentTime.getSeconds();
+        if (minutes < 10){
+            minutes = "0" + minutes;
+        }
+        if (seconds < 10){
+            seconds = "0" + seconds;
+        }
+        var v = hours + ":" + minutes + ":" + seconds + " ";
+        if(hours > 11){
+            v+="PM";
+        } else {
+            v+="AM"
+        }
+        setTimeout("updateTime()",1000);
+        document.getElementById('time').innerHTML=v;
+    }
+    updateTime();
+</script>
+   <h4>Current Time: <span id="time" /></h4>
+
+
+</body>
+
+</html>

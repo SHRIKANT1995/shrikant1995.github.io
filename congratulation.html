@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link rel="stylesheet" type="text/css" href="main.css">
+
+<title>Confirmation</title>
+</head>
+
+<body>
+<div>
+<a href="index.html">
+<img src="cydr.png">
+</a>
+</div>
+<table style="width: 100%">
+	<tr><td style="width: 121px"><a href="location.html">Our Locations</a></td>
+		<td style="width: 76px">&nbsp;&nbsp;<a href="Ourprices.html"> vehicles & its price</a></td>
+		<td class="auto-style5"><a href="location.html"><strong>Book Another Vehicle</strong></a></td>
+	</tr>
+</table>
+
+<h1>Congratulations!! You have booked your first car and your vehicle details will be sent to you through email.</h1>
+<h3> Thank you for letting us serve you with the world class vehicles and customer service.</h3>
+<h4>Please arrive to your respected location at least an hour prior to your booking time.</h4>
+<img alt="logo" height="240" src="thank-you.png" width="310" />
+<script> 
+
+	function updateTime() {
+     	var currentTime = new Date();
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        var seconds = currentTime.getSeconds();
+        if (minutes < 10){
+            minutes = "0" + minutes;
+        }
+        if (seconds < 10){
+            seconds = "0" + seconds;
+        }
+        var v = hours + ":" + minutes + ":" + seconds + " ";
+        if(hours > 11){
+            v+="PM";
+        } else {
+            v+="AM"
+        }
+        setTimeout("updateTime()",1000);
+        document.getElementById('time').innerHTML=v;
+    }
+    updateTime();
+</script>
+   <h4>Current Time: <span id="time" /></h4>
+
+</body>
+
+</html>

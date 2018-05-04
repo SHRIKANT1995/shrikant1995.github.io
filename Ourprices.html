@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link rel="stylesheet" type="text/css" href="main.css">
+<script>
+
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    var x = document.getElementById("pickup-time");
+    x.innerHTML = decodeURIComponent(vars["pickup-time"]);
+    x = document.getElementById("dropoff-time");
+    x.innerHTML = decodeURIComponent(vars["dropoff-time"]);
+
+    return vars;
+}
+</script>
+<title>AVAILABLE RIDES</title>
+</head>
+
+<body>
+<div>
+<a href="shrihome.html">
+<img src="cydr.png">
+</a>
+</div>
+<hr>
+<table style="width: 100%">
+	<tr><td style="width: 121px"><a href="location.html">Our Locations</a></td>
+		<td style="width: 76px">&nbsp;&nbsp;<a href="Ourprices.html"> vehicles & its price</a></td>
+		<td class="auto-style5"><a href="location.html"><strong>Book A Vehicle</strong></a></td>
+	</tr>
+</table>
+<hr>
+<body onload="getUrlVars()">
+
+<p>
+<div> Selected pickup-time: </div>
+<div id="pickup-time"></div> <br>
+<div> Selected dropoff-time: </div>
+<div id="dropoff-time"></div> <br>
+</p>
+
+
+<hr>
+<body onload="slideshow();">
+	<div class="center padding">
+    	&nbsp;<img id="imgCover" src="car.gif" onmouseover="document.getElementById(&#39;msg&#39;).innerHTML=&#39;banner ads&#39;" onmouseout="noPicture()" alt="Full cover image" width="399"></div>
+
+
+<table border="1" cellpadding="5" cellspacing="3" width="100%">
+<tr>
+<th colspan="4"><h1><u><i> AVAILABLE RIDES (click on price to proceed)</i></u></h1></th>
+</tr>
+
+
+<tr>
+	<td>
+	VEHICLE</td>
+	
+	<td>
+	AVAILABILITY</td>
+	<td>
+	LOCATIONS AVAILABLE AT</td>
+	<td>
+	COST</td>
+</tr>
+
+<tr>
+	<td>
+	Maserati (CAR)</td>
+	<td>
+	Yes</td>
+	<td>
+	Arlington, Austin, Frisco</td>
+	<td><a href="cydersignup.html">
+	$99+taxes</td></a>
+
+	
+</tr>
+
+<tr>
+	<td>
+	Tesla Model S(CAR)</td>
+	<td>
+	Yes
+	</td>
+	<td>
+	Arlington, Austin, Dallas, Frisco, FortWorth, Houston</td>
+	<td><a href="cydersignup.html">
+	$155+taxes</td></a>
+	
+</tr>
+
+<tr>
+	<td>
+	BMW 528i(CAR)</td>
+	<td>
+	No</td>
+	<td>
+	None</td>
+	<td>
+	Undisclosed</td>
+	
+</tr>
+<tr>
+	<td>
+	MercedesBenz E (CAR)</td>
+	<td>
+	Yes</td>
+	<td>
+	Austin, Dallas, Frisco, FortWorth, Houston</td>
+	<td><a href="cydersignup.html">
+	$70+taxes</td></a>
+	
+</tr>
+
+<tr>
+	<td>
+	Toyota Corolla(CAR)</td>
+	<td>
+	Yes</td>
+	<td>
+	Dallas, Houston, Plano</td>
+	<td><a href="cydersignup.html">
+	$25+taxes</td></a>
+	
+</tr>
+<tr>
+	<td>
+	Yamaha R1(MotorBike)</td>
+	<td>
+	Yes</td>
+	<td>
+	All Locations</td>
+	<td><a href="cydersignup.html">
+	$35+taxes</td></a>
+	
+</tr>
+<tr>
+	<td>
+	Honda CBR 350(MotorBike)</td>
+	<td>
+	No</td>
+	<td>
+	None</td>
+	<td>
+	Undisclosed</td>
+	
+</tr>
+<tr>
+	<td>
+	Harley Davidson 883(MotorBike)</td>
+	<td>
+	Yes</td>
+	<td>
+	All Locations</td>
+	<td><a href="cydersignup.html">
+	$50+taxes</td></a>
+	
+</tr>
+<tr>
+	<td>
+	35 Bicyles</td>
+	<td>
+	Yes</td>
+	<td>
+	All Locations</td>
+	<td><a href="cydersignup.html">
+	$2 per hour</td></a>
+	
+</tr>
+<tr>
+	<td>
+	RTV</td>
+	<td>
+	Yes</td>
+	<td>
+	All Locations</td>
+	<td><a href="cydersignup.html">
+	$15 per hour</td></a>
+	
+</tr>
+<tr>
+	<td>
+	Golf Carts</td>
+	<td>
+	Yes</td>
+	<td>
+	All Locations (can drive only in city)</td>
+	<td><a href="cydersignup.html">
+	$10 per hour
+	</td></a>
+	
+</tr>
+<tr>
+	<td>
+	Martin Box Marine(Yacht)</td>
+	<td>
+	Yes</td>
+	<td>
+	Austin, Houston, Frisco, Plano, Dallas</td>
+	<td><a href="cydersignup.html">
+	$66 per hour</td></a>
+	
+</tr>
+
+</table>
+<br />
+<script> 
+
+	function updateTime() {
+     	var currentTime = new Date();
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        var seconds = currentTime.getSeconds();
+        if (minutes < 10){
+            minutes = "0" + minutes;
+        }
+        if (seconds < 10){
+            seconds = "0" + seconds;
+        }
+        var v = hours + ":" + minutes + ":" + seconds + " ";
+        if(hours > 11){
+            v+="PM";
+        } else {
+            v+="AM"
+        }
+        setTimeout("updateTime()",1000);
+        document.getElementById('time').innerHTML=v;
+    }
+    updateTime();
+</script>
+   <h4>Current Time: <span id="time" /></h4>
+
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link rel="stylesheet" type="text/css" href="main.css">
+
+<title>time and availability</title>
+<script>
+
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    var x = document.getElementById("location");
+    x.innerHTML = vars["vehicle.html?Select1"];
+    x = document.getElementById("vehicle");
+    x.innerHTML = vars["Select2"];
+
+    return vars;
+}
+</script>
+</head>
+
+<body onload="getUrlVars()">
+
+<div>
+<a href="index.html">
+<img src="cydr.png">
+</a>
+</div>
+<table style="width: 100%">
+	<tr><td style="width: 121px"><a href="location.html">Our Locations</a></td>
+		<td style="width: 76px">&nbsp;&nbsp;<a href="Ourprices.html"> vehicles & its price</a></td>
+		<td class="auto-style5"><a href="location.html"><strong>Book A Vehicle</strong></a></td>
+	</tr>
+</table>
+
+<p>
+<div> Selected Location: </div>
+<div id="location"></div> <br>
+<div> Selected Vehicle: </div>
+<div id="vehicle"></div> <br>
+</p>
+
+ <div>
+ <hr>
+ 
+            <i class="icon clock"></i>
+            <h3>Booking time</h3>
+            <form method="GET" action="Ourprices.html" >
+
+            <select name="pickup-time" data-time-of="pickup">
+                <option value="00:00">Midnight</option>
+                <option value="00:30">00:30 AM</option>
+                <option value="01:00">01:00 AM</option>
+                <option value="01:30">01:30 AM</option>
+                <option value="02:00">02:00 AM</option>
+                <option value="02:30">02:30 AM</option>
+                <option value="03:00">03:00 AM</option>
+                <option value="03:30">03:30 AM</option>
+                <option value="04:00">04:00 AM</option>
+                <option value="04:30">04:30 AM</option>
+                <option value="05:00">05:00 AM</option>
+                <option value="05:30">05:30 AM</option>
+                <option value="06:00">06:00 AM</option>
+                <option value="06:30">06:30 AM</option>
+                <option value="07:00">07:00 AM</option>
+                <option value="07:30">07:30 AM</option>
+                <option value="08:00">08:00 AM</option>
+                <option value="08:30">08:30 AM</option>
+                <option value="09:00">09:00 AM</option>
+                <option value="09:30">09:30 AM</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="10:30">10:30 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="11:30">11:30 AM</option>
+                <option value="12:00">Noon</option>
+                <option value="12:30">12:30 PM</option>
+                <option value="13:00">01:00 PM</option>
+                <option value="13:30">01:30 PM</option>
+                <option value="14:00">02:00 PM</option>
+                <option value="14:30">02:30 PM</option>
+                <option value="15:00">03:00 PM</option>
+                <option value="15:30">03:30 PM</option>
+                <option value="16:00">04:00 PM</option>
+                <option value="16:30">04:30 PM</option>
+                <option value="17:00">05:00 PM</option>
+                <option value="17:30">05:30 PM</option>
+                <option value="18:00">06:00 PM</option>
+                <option value="18:30">06:30 PM</option>
+                <option value="19:00">07:00 PM</option>
+                <option value="19:30">07:30 PM</option>
+                <option value="20:00">08:00 PM</option>
+                <option value="20:30">08:30 PM</option>
+                <option value="21:00">09:00 PM</option>
+                <option value="21:30">09:30 PM</option>
+                <option value="22:00">10:00 PM</option>
+                <option value="22:30">10:30 PM</option>
+                <option value="23:00">11:00 PM</option>
+                <option value="23:30">11:30 PM</option>
+            </select>
+          </div>
+        
+        <div class="form-group">
+          <div>
+            <i class="icon dropoff"></i>
+          </div>
+          <hr>
+          <h3>Return time on the next day.</h3>
+          <div>
+            <i class="icon clock"></i>
+            <select name="dropoff-time" data-time-of="dropoff">
+                  <option value="00:00">Midnight</option>
+                  <option value="00:30">00:30 AM</option>
+                  <option value="01:00">01:00 AM</option>
+                  <option value="01:30">01:30 AM</option>
+                  <option value="02:00">02:00 AM</option>
+                  <option value="02:30">02:30 AM</option>
+                  <option value="03:00">03:00 AM</option>
+                  <option value="03:30">03:30 AM</option>
+                  <option value="04:00">04:00 AM</option>
+                  <option value="04:30">04:30 AM</option>
+                  <option value="05:00">05:00 AM</option>
+                  <option value="05:30">05:30 AM</option>
+                  <option value="06:00">06:00 AM</option>
+                  <option value="06:30">06:30 AM</option>
+                  <option value="07:00">07:00 AM</option>
+                  <option value="07:30">07:30 AM</option>
+                  <option value="08:00">08:00 AM</option>
+                  <option value="08:30">08:30 AM</option>
+                  <option value="09:00">09:00 AM</option>
+                  <option value="09:30">09:30 AM</option>
+                  <option value="10:00">10:00 AM</option>
+                  <option value="10:30">10:30 AM</option>
+                  <option value="11:00">11:00 AM</option>
+                  <option value="11:30">11:30 AM</option>
+                  <option value="12:00">Noon</option>
+                  <option value="12:30">12:30 PM</option>
+                  <option value="13:00">01:00 PM</option>
+                  <option value="13:30">01:30 PM</option>
+                  <option value="14:00">02:00 PM</option>
+                  <option value="14:30">02:30 PM</option>
+                  <option value="15:00">03:00 PM</option>
+                  <option value="15:30">03:30 PM</option>
+                  <option value="16:00">04:00 PM</option>
+                  <option value="16:30">04:30 PM</option>
+                  <option value="17:00">05:00 PM</option>
+                  <option value="17:30">05:30 PM</option>
+                  <option value="18:00">06:00 PM</option>
+                  <option value="18:30">06:30 PM</option>
+                  <option value="19:00">07:00 PM</option>
+                  <option value="19:30">07:30 PM</option>
+                  <option value="20:00">08:00 PM</option>
+                  <option value="20:30">08:30 PM</option>
+                  <option value="21:00">09:00 PM</option>
+                  <option value="21:30">09:30 PM</option>
+                  <option value="22:00">10:00 PM</option>
+                  <option value="22:30">10:30 PM</option>
+                  <option value="23:00">11:00 PM</option>
+                  <option value="23:30">11:30 PM</option>
+            </select>
+          </div>
+        </div>
+        <hr>
+        <table style="width: 100%">
+	</table>
+	<h3> Choose Your Ride. (Click On the Vehicle and then sign up for further process.)</h3>
+<p>
+<a href="Ourprices.html">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input name="Button3" style="width: 100px" type="submit" value="Continue"><table style="width: 100%" align="center">
+	<tr>
+		<td class="auto-style3" style="width: 974px"><strong>&nbsp;Cars</strong></td>
+	</tr>
+</table>
+
+<img class="a" alt="cars" height="100" src="carandev.png" width="400"  />
+
+<table style="width: 100%">
+	<tr>
+		<td class="auto-style3"><strong>Bikes</strong></td>
+	</tr>
+</table>
+
+&nbsp;<img class="a" alt="bike" height="100" src="bikeandmotorbike.png" width="400" /></p>
+
+
+<table style="width: 100%">
+	<tr>
+		<td class="auto-style3"><strong>RTVs &amp; Golf Carts</strong></td>
+	</tr>
+</table>
+<p>
+<img alt="rtvvvv" height="100" src="rtvandgolfcart.png" width="400" /></p>
+<table style="width: 100%">
+	<tr>
+		<td class="auto-style3"><strong>Yachts</strong></td>
+	</tr>
+</table>
+<p>
+<img alt="yachts" height="100" src="10721220_68SY_SideProfile-new.png" width="400" /> </p>
+</a>
+<script> 
+
+	function updateTime() {
+     	var currentTime = new Date();
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        var seconds = currentTime.getSeconds();
+        if (minutes < 10){
+            minutes = "0" + minutes;
+        }
+        if (seconds < 10){
+            seconds = "0" + seconds;
+        }
+        var v = hours + ":" + minutes + ":" + seconds + " ";
+        if(hours > 11){
+            v+="PM";
+        } else {
+            v+="AM"
+        }
+        setTimeout("updateTime()",1000);
+        document.getElementById('time').innerHTML=v;
+    }
+    updateTime();
+</script>
+   <h4>Current Time: <span id="time" /></h4>
+
+</body>
+
+</html>

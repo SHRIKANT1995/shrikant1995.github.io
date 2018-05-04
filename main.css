@@ -1,0 +1,111 @@
+﻿body{
+    background-image: url('white.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+#main{
+    background-color:yellow;
+    width: 1000px;
+    padding: 3px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    box-shadow: 10px 10px 5px #000000;
+}
+
+#left{
+                float: left;
+				width: 200px;
+				margin-left:5px;
+                bottom:0;
+        		}
+		#right 	{
+                float: right;
+        		width: 580px;
+        		margin-right:5px;
+				}
+		#img-logo {
+				margin-top:5px;
+                margin-left:5px;
+                box-shadow: 3px 3px 3px #292900;
+				}
+        h1      {
+                font-style: bold;
+                }
+        h2      {
+                font-weight: bold;
+                border-bottom: 2px solid;
+                }
+        p       {
+                font-size: 1em;
+                }
+        .title  {
+                background-color: black;
+                color: white;
+                font-size:10pt;
+                padding: 5px;
+                margin-top: 0px;
+                box-shadow: 2px 2px 2px #292900;
+                }
+        a       {
+				text-decoration:none;
+                font-weight:bold;
+                color: #000000;
+                }
+        a:visted{
+				text-decoration:none;
+                font-weight:bold;
+                color: #000000;
+                }
+
+        #nav    {
+                margin: 5px 20px 5px 20px;
+                font-style: bold;
+                text-align:center;
+                background-color: black;
+                
+                }
+        #nav a  {
+				text-decoration:none;
+                font-weight:bold;
+                color: white;
+                }
+        #nav a:visted  {
+				text-decoration:none;
+                font-weight:bold;
+                color: white;
+                }
+        #nav a:hover {
+				text-decoration:underline overline;
+                font-weight:bold;
+                color: white;
+				}
+        hr.navlinetop  {
+                color: black;
+                background-color: black;
+                height: 2px;
+                border: 0;
+                }
+        .navlinebot {
+                color: black;
+                background-color: black;
+                height: 1px;
+                border: 0;
+                }
+        div.box {
+                border: 1px solid;
+                padding: 5px;
+                font-size: 10pt;
+                box-shadow: 2px 2px 2px black;
+                }
+        table.navbar    {
+                background-color: black;
+                width: 85%;
+                margin-left: auto;
+                margin-right: auto;
+                }
+        table.schools   {
+                border:1px solid black;
+                font-size: 10pt;
+                }

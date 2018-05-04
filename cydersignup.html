@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+<head>
+<link rel="stylesheet" type="text/css" href="main.css">
+<script src="validate.js"></script>
+	<title>Sign Up for CYDER</title>
+</head>
+
+<body>
+
+
+<div>
+<a href="index.html">
+<img src="cydr.png">
+</a>
+</div>
+<p></p>
+<hr>
+<table style="width: 100%">
+	<tr><td style="width: 121px"><a href="location.html">Our Locations</a></td>
+		<td style="width: 76px">&nbsp;&nbsp;<a href="Ourprices.html"> vehicles & its price</a></td>
+		<td class="auto-style5"><a href="location.html"><strong>Book A Vehicle</strong></a></td>
+	</tr>
+</table>
+<hr>
+<h3> SIGN UP FOR CYDER </h3>
+<form name="contact" method="post" onsubmit="return validateForm()" action="congratulation.html">
+
+<p> Please complete the following form for signing up for CYDER </p>
+<label> First Name: </label>
+<input type="text" name ="First name" size="20" max="30" placeholder="First name" required>(First name)
+<p></p>
+<label> Last Name: </label>
+<input type="text" name ="Last name" size="20" max="40" placeholder="Last name">(Last name)
+<p></p>
+<label> Email: </label>
+<input type="email" name="email" size="20" placeholder="name@domain.com">(name@domain.com)
+<p></p>
+<label> Phone Number:</label>
+<input type=+1"(xxx)xxx-xxxx" name="phone number" size="15" placeholder="phone number">(Enter your Phone Number)
+<p></p>
+<label> Enter Vehicle Initials:</label>
+<input type="text" name="Initials" size="4" placeholder="vehicle initials">(Enter your Phone Number)
+<p></p>
+
+<details>
+	<summary> Please fill out your vehicle preference: </summary>
+	<p> What would you like to drive for free on your next booking?</p>
+	<input type="radio" name="source" value="Not yet in college">
+	<label> CAR</label>
+	<input type="radio" name ="source" value="Freshmen">
+	<label> BIKE </label>
+	<input type="radio" name ="source" value="Sophomore">
+	<label> RTVs/Golf Cart </label>
+	<input type="radio" name ="source" value="Senior">
+	<label> ELECTRIC VEHICLE </label>
+	<input type="radio" name ="source" value="Graduate">
+	<label> OR SAIL (YACHT/BOATS) </label>
+</details>
+<p></p>
+<input type="submit" value="Submit">
+
+
+<input type="reset" value="Clear">
+</a>
+<p id="email">Contact Web Administrator @ <a href="mailto:email@uta.edu">cyder.happinessonwheels@gmail.com
+</a></p>
+
+</form>
+<script> 
+
+	function updateTime() {
+     	var currentTime = new Date();
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        var seconds = currentTime.getSeconds();
+        if (minutes < 10){
+            minutes = "0" + minutes;
+        }
+        if (seconds < 10){
+            seconds = "0" + seconds;
+        }
+        var v = hours + ":" + minutes + ":" + seconds + " ";
+        if(hours > 11){
+            v+="PM";
+        } else {
+            v+="AM"
+        }
+        setTimeout("updateTime()",1000);
+        document.getElementById('time').innerHTML=v;
+    }
+    updateTime();
+</script>
+   <h4>Current Time: <span id="time" /></h4>
+
+</body>
+</html>
